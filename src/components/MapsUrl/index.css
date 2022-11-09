@@ -1,0 +1,13 @@
+.map{
+  height: 15rem;
+}
+.mapname{
+    color: white;
+}
+.maps-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 4rem;
+}

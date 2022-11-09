@@ -1,0 +1,183 @@
+.home-container{
+    width: 100vw;
+    /* height: 100vh; */
+      background-color: black;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    padding: 3rem;
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  
+}
+.footer{
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: center;
+text-align: center;
+}
+.search-container{
+    height: 3rem;
+    width: 30rem;
+    background-color: rgb(65, 66, 66);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 3px;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+input{
+    height: 3rem;
+    width: 30rem;
+    background-color: transparent;
+    border-width: 0;
+    border-color: none;
+    outline: none;
+    padding-left: 1rem;
+    color: white;
+}
+.search-icon{
+    color: rgb(212, 209, 209);
+}
+section{
+    color: white;
+}
+.search-result-value{
+    list-style-type: none;
+}
+.all-states-table {
+  width: 100%;
+  background: #1e1e30;
+  border: 1px solid #475569;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
+  border-radius: 12px;
+  align-self: flex-start;
+  margin-top: 2rem;
+}
+.table-header {
+  border-bottom: 1px solid #475569;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 72px;
+  /* gap: 2rem; */
+  /* padding-right: 1rem; */
+}
+.state-name-heading {
+  width: 22%;
+  padding: 0px 32px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.table-header-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f8fafc;
+}
+.order {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+.order-icon {
+  color: #94a3b8;
+  background-color: transparent;
+}
+.other-tables-bar {
+  width: 23.6%;
+}
+.stats-block-column {
+  text-align: center;
+  min-width: 120px;
+  margin: 0px 10px;
+}
+.stats-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.stats-icon {
+  font-size: 38px;
+}
+.stats-number {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 24px;
+}
+.kk{
+    display: flex;
+    gap: 4rem;
+    margin-top: 1rem;
+}
+
+.red, .reds{
+  color: #ff073a;
+}
+.blue {
+  color: #007bff;
+}
+.green {
+  color: #28a745;
+}
+.gray {
+  color: #6c757d;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.other-tables {
+  padding: 0;
+}
+.covid-logo-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0;
+}
+.covid-logo{
+height:6rem;
+width: 8rem;
+}
+.covid-title{
+    color: white;
+    font-family: cursive;
+    font-style: italic;
+}
+@media (max-width: 600px) {
+  .search-container {
+    width: 90%;
+  }
+
+  .country-stats {
+    width: 100%;
+  }
+  .stats-number {
+    font-size: 16px;
+  }
+  .stats-block-column {
+    margin: 0px 3px;
+  }
+  .all-states-table {
+    width: 800px;
+    overflow-x: auto;
+  }
+}

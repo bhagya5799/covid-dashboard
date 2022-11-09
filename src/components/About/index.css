@@ -1,0 +1,26 @@
+.container-About{
+background-color: black;
+ /* height: 100vh; */
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+}
+.about-box, .factList{
+      padding: 3rem;
+}
+.about{
+    color: white;
+}
+.about-description{
+    color: white;
+}
+.vaccine-title{
+    color: white;
+}
+.loader-container{
+    display: flex;
+    justify-content: center;
+}
+.about-vaccine-title{
+    color: white;
+}
