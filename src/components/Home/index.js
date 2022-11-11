@@ -233,7 +233,8 @@ class Home extends Component {
     } = this.state
     return (
       <div className="kk">
-        <div className="stats-block-column" testid="countryWideConfirmedCases">
+        {/* testid="countryWideConfirmedCases" */}
+        <div className="stats-block-column">
           <p className="stats-title red">Confirmed</p>
           <img
             src="https://res.cloudinary.com/dzfr8ujso/image/upload/v1650906699/check-mark_1_o3kbj1.png"
@@ -243,7 +244,8 @@ class Home extends Component {
 
           <p className="stats-number reds">{totalConfirmedCases}</p>
         </div>
-        <div className="stats-block-column" testid="countryWideActiveCases">
+        {/* testid="countryWideActiveCases" */}
+        <div className="stats-block-column">
           <p className="stats-title blue">Active</p>
           <img
             src="https://res.cloudinary.com/dzfr8ujso/image/upload/v1650906741/protection_1_re7mxu.png"
@@ -252,7 +254,8 @@ class Home extends Component {
           />
           <p className="stats-number blue">{totalActiveCases}</p>
         </div>
-        <div className="stats-block-column" testid="countryWideRecoveredCases">
+        {/* testid="countryWideRecoveredCases" */}
+        <div className="stats-block-column">
           <p className="stats-title green">Recovered</p>
           <img
             src="https://res.cloudinary.com/dzfr8ujso/image/upload/v1650906752/recovered_1_kpsqyj.png"
@@ -261,7 +264,8 @@ class Home extends Component {
           />
           <p className="stats-number green">{totalRecoveredCases}</p>
         </div>
-        <div className="stats-block-column " testid="countryWideDeceasedCases">
+        {/* testid="countryWideDeceasedCases" */}
+        <div className="stats-block-column ">
           <p className="stats-title gray">Deceased</p>
           <img
             src="https://res.cloudinary.com/dzfr8ujso/image/upload/v1650906686/breathing_1_dkacsd.png"
@@ -287,7 +291,8 @@ class Home extends Component {
   }
 
   renderLoadingView = () => (
-    <div testid="homeRouteLoader">
+    //   testid="homeRouteLoader"
+    <div>
       <Loader type="ThreeDots" color="white" height="50" width="50" />
     </div>
   )
@@ -295,7 +300,8 @@ class Home extends Component {
   showSeacrhResults = () => {
     const {filterSearchResults} = this.state
     return (
-      <ul className="search-result-value" testid="searchResultsUnorderedList">
+      // testid="searchResultsUnorderedList"
+      <ul className="search-result-value">
         {filterSearchResults.map(each => (
           <SearchResults
             key={each.state_code}
@@ -332,14 +338,15 @@ class Home extends Component {
   renderAllStatesData = () => {
     const {stateinformation} = this.state
     return (
-      <div className="all-states-table" testid="stateWiseCovidDataTable">
+      // testid="stateWiseCovidDataTable"
+      <div className="all-states-table">
         <div className="table-header">
           <div className="state-name-heading">
             <p className="table-header-title ">States/UT</p>
             <button
               className="order"
               type="button"
-              testid="ascendingSort"
+              //   testid="ascendingSort"
               onClick={this.whenAscendingSortButtonClicked}
             >
               <FcGenericSortingAsc className="order-icon" />
@@ -347,7 +354,7 @@ class Home extends Component {
             <button
               className="order"
               type="button"
-              testid="descendingSort"
+              //   testid="descendingSort"
               onClick={this.whenDescendingSortButtonClicked}
             >
               <FcGenericSortingDesc className="order-icon" />
@@ -401,7 +408,7 @@ class Home extends Component {
           <div className="search-container">
             <BsSearch className="search-icon" />
             <input
-              testid="searchIcon"
+              //   testid="searchIcon"
               onChange={this.getSearchItem}
               type="search"
               placeholder="Enter the state"

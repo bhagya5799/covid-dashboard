@@ -4,6 +4,8 @@
       background-color: black;
     margin: 0;
     box-sizing: border-box;
+    overflow: none;
+        
 }
 .container{
     padding: 3rem;
@@ -59,6 +61,7 @@ section{
   border-radius: 12px;
   align-self: flex-start;
   margin-top: 2rem;
+  min-width: 990px;
 }
 .table-header {
   border-bottom: 1px solid #475569;
@@ -177,7 +180,8 @@ width: 8rem;
     margin: 0px 3px;
   }
   .all-states-table {
-    width: 800px;
+    /* width: 500px; */
     overflow-x: auto;
+    min-width: 500px;
   }
 }

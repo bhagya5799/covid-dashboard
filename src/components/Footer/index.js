@@ -6,19 +6,20 @@ import './index.css'
 
 const Footer = () => (
   <div className="footer-container">
-    {/* <Link to="/" className="link-logo">
-      <h1 className="covidindia">COVID19INDIA</h1>
+    <Link to="/" className="link-logo">
+      <h1 className="descrption">
+        COVID19<span className="india">INDIA</span>
+      </h1>
     </Link>
     <p className="descrption">
       we stand with everyone fighting on the front lines
-    </p> */}
-    <h1 className="descrption">
-      {/* COVID19<span className="india">INDIA</span> */}
-      COVID19INDIA
-    </h1>
-    <p className="tagline">
-      we stand with everyone fighting on the front lines
     </p>
+    {/* <h1 className="descrption">
+      COVID19<span className="india">INDIA</span>
+    </h1> */}
+    {/* <p className="tagline">
+      we stand with everyone fighting on the front lines
+    </p> */}
     <div className="footer-icons">
       <a href="https://github.com/bhagya5799">
         <VscGithubAlt className="icon" />

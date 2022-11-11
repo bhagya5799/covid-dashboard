@@ -42,6 +42,13 @@ class Header extends Component {
                 </button>
               </li>
             </Link>
+            <Link to="/vaccination" className="link-vaccination">
+              <li>
+                <button className="link-vaccination" type="button">
+                  Vaccination
+                </button>
+              </li>
+            </Link>
           </ul>
           <button
             className="Mobile-view"
@@ -54,16 +61,27 @@ class Header extends Component {
         {showMenu ? (
           <nav className="desktop">
             <ul className="nav-list-mobile">
-              <li>
-                <button className="home" type="button">
-                  HOME
-                </button>
-              </li>
-              <li>
-                <button className="about" type="button">
-                  ABOUT
-                </button>
-              </li>
+              <Link to="/" className="link-home">
+                <li>
+                  <button className="home" type="button">
+                    HOME
+                  </button>
+                </li>
+              </Link>
+              <Link to="/about" className="link-about">
+                <li>
+                  <button className="about" type="button">
+                    ABOUT
+                  </button>
+                </li>
+              </Link>
+              <Link to="/vaccination" className="link-vaccination">
+                <li>
+                  <button className="link-vaccination" type="button">
+                    Vaccination
+                  </button>
+                </li>
+              </Link>
             </ul>
             <button
               className="Mobile-view"

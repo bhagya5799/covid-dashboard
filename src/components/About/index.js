@@ -14,7 +14,8 @@ class About extends Component {
   }
 
   renderLoader = () => (
-    <div className="loader-container" testid="aboutRouteLoader">
+    //   testid="aboutRouteLoader"
+    <div className="loader-container">
       <Loader type="ThreeDots" color="white" />
     </div>
   )
@@ -57,7 +58,8 @@ class About extends Component {
     const {faqList, factoidsList} = this.state
     return (
       <>
-        <ul className="factlist" testid="faqsUnorderedList">
+        {/* testid="faqsUnorderedList" */}
+        <ul className="factlist">
           {faqList.map(each => (
             <FaqsList
               key={each.qno}

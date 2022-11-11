@@ -72,7 +72,7 @@ class ChartsData extends Component {
   renderLoader = () => (
     <div
       className="products-details-loader-container"
-      testid="timelinesDataLoader"
+      // testid="timelinesDataLoader"
     >
       <Loader type="ThreeDots" color="#0b69ff" height="50" width="50" />
     </div>
@@ -154,9 +154,9 @@ class ChartsData extends Component {
   allChartsData = () => (
     <>
       <div className="barchart-container">{this.barChart()}</div>
-
       <h1 className="charts-title">Spread Trends</h1>
-      <div className="barcharts-container" testid="lineChartsContainer">
+      <div className="barcharts-container">
+        {/* testid="lineChartsContainer" */}
         <div className="charts confirmed-background">
           {this.graph('confirmed', '#FF073A')}
         </div>

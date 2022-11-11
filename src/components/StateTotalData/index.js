@@ -79,7 +79,8 @@ class StateTotalData extends Component {
             value={confirmedData.name}
             onClick={() => this.onGetTotal(confirmedData.name)}
           >
-            <div testid="stateSpecificConfirmedCasesContainer">
+            {/* testid="stateSpecificConfirmedCasesContainer" */}
+            <div>
               <p className="stats-title">{confirmedData.name}</p>
               <img
                 src={confirmedData.logo}
@@ -96,7 +97,8 @@ class StateTotalData extends Component {
             value={activeData.name}
             onClick={() => this.onGetTotal(activeData.name)}
           >
-            <div testid="stateSpecificActiveCasesContainer">
+            {/* testid="stateSpecificActiveCasesContainer" */}
+            <div>
               <p className="stats-title">{activeData.name}</p>
               <img
                 src={activeData.logo}
@@ -113,7 +115,8 @@ class StateTotalData extends Component {
             value={recoveredData.name}
             onClick={() => this.onGetTotal(recoveredData.name)}
           >
-            <div testid="stateSpecificRecoveredCasesContainer">
+            {/* testid="stateSpecificRecoveredCasesContainer" */}
+            <div>
               <p className="stats-title">{recoveredData.name}</p>
               <img
                 src={recoveredData.logo}
@@ -130,7 +133,8 @@ class StateTotalData extends Component {
             value={deceasedData.name}
             onClick={() => this.onGetTotal(deceasedData.name)}
           >
-            <div testid="stateSpecificDeceasedCasesContainer">
+            {/* testid="stateSpecificDeceasedCasesContainer" */}
+            <div>
               <p className="stats-title">{deceasedData.name}</p>
               <img
                 src={deceasedData.logo}

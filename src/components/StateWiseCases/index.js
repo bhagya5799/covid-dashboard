@@ -400,7 +400,7 @@ class StateWiseCases extends Component {
   renderLoadingView = () => (
     <div
       className="products-details-loader-container"
-      testid="stateDetailsLoader"
+      //   testid="stateDetailsLoader"
     >
       <Loader type="ThreeDots" color="#0b69ff" height="50" width="50" />
     </div>
@@ -499,7 +499,7 @@ class StateWiseCases extends Component {
             <div className="district-data-ul-list">
               <ul
                 className="districts-container"
-                testid="topDistrictsUnorderedList"
+                // testid="topDistrictsUnorderedList"
               >
                 {catdata.map(each => (
                   <ShowEachDistrictData
@@ -511,7 +511,8 @@ class StateWiseCases extends Component {
               </ul>
             </div>
           </div>
-          <div className="graphs-data" testid="lineChartsContainer">
+          {/* testid="lineChartsContainer" */}
+          <div className="graphs-data">
             <ChartsData stateCode={stateCode} category={category} />
           </div>
         </div>

@@ -1,0 +1,43 @@
+.vaccination-container{
+    background-color: black;
+    height: 100vh;
+   
+}
+.title{
+    color: aliceblue;
+}
+.select{
+    padding: 5px;
+    color: blue;
+    outline: none;
+    margin-top: 5rem;
+    font-weight: bold;
+}
+.filterdata{
+    list-style-type: none;
+    color: red;
+     font-size: 22px;
+    font-weight: bold;
+}
+.total{
+    color: green;
+}
+.Link{
+text-decoration: none;}
+.select-container{
+    display: flex;
+    align-items: center;
+    padding-left: 1.5rem;
+    gap: 1rem;
+}
+.sites-container{
+    display: flex;
+padding-left: 1rem;
+padding-top: 4rem;
+font-weight: bold;
+gap: 1rem;
+color: rgb(45, 19, 192);
+}
+.todayReport{
+    padding-left: 2rem;
+}

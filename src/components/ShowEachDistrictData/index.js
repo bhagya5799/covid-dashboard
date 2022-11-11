@@ -2,6 +2,7 @@ import './index.css'
 
 const ShowEachDistrictData = props => {
   const {number, name} = props
+  console.log(name, number)
 
   return (
     <li className="list-style">
